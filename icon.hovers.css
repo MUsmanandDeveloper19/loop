@@ -1,0 +1,6 @@
+#instagram-div-hover{
+    background-color: red;
+    }
+#instagram-div-hover :hover{
+    background-color: #2F3541;
+}

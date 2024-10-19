@@ -1,0 +1,38 @@
+.body-color{
+    background-color:black;
+}
+.fade-div{
+    height: 55px;
+    border: 1px solid;
+}
+#fade-content{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    animation: fade 2s linear infinite alternate;
+}
+@keyframes fade{
+    0%{
+        transition: all 34s;
+    }
+    50%{
+        color: red;
+        transition: all 34s;
+    }
+    100%{
+        color: black;
+        transition: all 34s;
+    }
+}
+/* From Uiverse.io by garerim */ 
+.input {
+    margin: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    max-width: 190px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 9999px;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    color: #fff;
+  }

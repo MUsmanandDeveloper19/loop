@@ -1,0 +1,28 @@
+.card {
+    position: relative;
+    width: auto; /* Set the width of the card */
+    height: 250px; /* Set the height of the card */
+    overflow: hidden; /* Hide overflowing content by default */
+    border-radius: 12px;
+    border: none;
+  }
+  .card img {
+    width: 100%; /* Make the image fill the entire card */
+    height: 100%; /* Make the image fill the entire card */
+    object-fit: cover; /* Ensure the image covers the card without stretching */
+    border: none;
+  }
+  .overflow-content {
+    position: absolute;
+    bottom: -100%; /* Initially, place the overflow content outside the card */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.329); /* Semi-transparent background */
+    padding: 20px;
+    border: none;
+    transition: bottom 0.3s ease; /* Add transition for smooth effect */
+  }
+  .card:hover .overflow-content {
+    bottom: 0; /* Move the overflow content up into the card when hovering */
+  }
